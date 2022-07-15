@@ -18,7 +18,7 @@ import java.util.Arrays;
 public class NERReader {
 
     public void ner() throws IOException {
-        String paragraph = "El saldo de tu tarjeta Mastercard Banco Galicia **** 8987 no es suficiente";
+        String paragraph = "El saldo de tu tarjeta Mastercard Banco Galicia **** 1234 no es suficiente";
 
         SimpleTokenizer simpleTokenizer = SimpleTokenizer.INSTANCE;
         String[] tokens = simpleTokenizer.tokenize(paragraph);
@@ -53,7 +53,7 @@ public class NERReader {
     }
 
     public void token() throws IOException {
-        String paragraph = "El saldo de tu tarjeta Mastercard Banco Galicia **** 8987 no es suficiente";
+        String paragraph = "El saldo de tu tarjeta Mastercard Banco Galicia **** 1234 no es suficiente";
 
         InputStream inputStreamNameFinder = getClass().getResourceAsStream("/models/es/es-token.bin");
 
